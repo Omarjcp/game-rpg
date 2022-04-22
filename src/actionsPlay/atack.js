@@ -3,14 +3,16 @@ export const atackBoss = (setCharacterData, characterData, boss) => {
   setTimeout(() => {
     setCharacterData({
       ...characterData,
-      ["heal"]: characterData.heal - boss.power,
+      ["heal"]: characterData.heal - Math.round(Math.random() * boss.power),
     });
   }, 200);
 };
 
 export const characterAtack = (setBossData, bossData, characterData) => {
-  setBossData({
-    ...bossData,
-    ["heal"]: bossData.heal - characterData.power,
-  });
+  setTimeout(() => {
+    setBossData({
+      ...bossData,
+      ["heal"]: bossData.heal - Math.round(Math.random() * characterData.power),
+    });
+  }, 200);
 };
