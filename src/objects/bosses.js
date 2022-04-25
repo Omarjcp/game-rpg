@@ -3,7 +3,7 @@ export function BossKiba(level) {
   this.level = level;
   this.heal = level * 4;
   this.experienceDrop = level * 1.5;
-  this.pkbDrop = level;
+  this.pkbDrop = level + 1;
   this.power = level;
 }
 

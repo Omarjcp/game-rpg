@@ -1,0 +1,62 @@
+.container-store {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    .container-buy-power {
+        display: flex;
+        align-items: center;
+        .button-buy {
+            font-weight: 600;
+            font-size: 1rem;
+            width: 3rem;
+            background-color: rgba(144, 144, 196, 0.356);
+            border: 1px solid rgba(124, 124, 167, 0.267);
+            border-radius: 10px;
+            margin: 1rem;
+            height: 2rem;
+            cursor: pointer;
+            font-family: 'Gloria Hallelujah', cursive;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        .image-power-up {
+            margin-right: 2rem;
+            height: 6rem;
+            width: 6rem;
+        }
+    }
+
+    .container-buy-heal {
+        display: flex;
+        margin-top: 1rem;
+        align-items: center;
+        
+        .button-buy {
+            font-weight: 600;
+            font-size: 1rem;
+            width: 3rem;
+            background-color: rgba(144, 144, 196, 0.267);
+            border: 1px solid rgba(124, 124, 167, 0.267);
+            border-radius: 10px;
+            margin: 1rem;
+            height: 2rem;
+            cursor: pointer;
+            font-family: 'Gloria Hallelujah', cursive;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        .image-potion {
+            margin-right: 2rem;
+            height: 6rem;
+            width: 6rem;
+        }
+    }
+}
